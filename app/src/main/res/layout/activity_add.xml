@@ -56,12 +56,14 @@
                 android:padding="8dp"/>
         </android.support.design.widget.CoordinatorLayout>
         <LinearLayout
+            android:background="@drawable/gradien"
             android:layout_weight="6"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginRight="16dp"
             android:orientation="vertical"
-            android:layout_marginTop="20dp">
+            android:paddingTop="35dp"
+            android:gravity="center_horizontal"
+            android:paddingRight="16dp">
             <LinearLayout
                 android:weightSum="5"
                 android:layout_width="match_parent"
@@ -70,7 +72,8 @@
                 <ImageView
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:src="@drawable/account_circle"/>
                 <EditText
                     android:id="@+id/edt_name"
@@ -79,6 +82,8 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/custom_editext"
                     android:hint="name"
+                    android:textColorHint="@color/primary_text"
+                    android:textColor="@color/icons"
                     android:imeOptions="actionNext"
                     android:inputType="textCapWords"
                     android:maxLines="1"
@@ -92,7 +97,8 @@
                 <ImageView
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:src="@drawable/calendar_range"/>
                 <EditText
                     android:id="@+id/edt_bd"
@@ -103,6 +109,8 @@
                     android:hint="birthday"
                     android:focusable="false"
                     android:clickable="true"
+                    android:textColorHint="@color/primary_text"
+                    android:textColor="@color/icons"
                     android:imeOptions="actionNext"/>
             </LinearLayout>
             <LinearLayout
@@ -113,7 +121,8 @@
                 <ImageView
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:src="@drawable/phone"/>
                 <EditText
                     android:id="@+id/edt_phone"
@@ -125,6 +134,8 @@
                     android:imeOptions="actionNext"
                     android:inputType="phone"
                     android:maxLines="1"
+                    android:textColorHint="@color/primary_text"
+                    android:textColor="@color/icons"
                     android:minLines="1"/>
             </LinearLayout>
             <LinearLayout
@@ -133,9 +144,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp">
                 <ImageView
+                    android:layout_gravity="center"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:src="@drawable/email"/>
                 <EditText
                     android:id="@+id/edt_email"
@@ -147,6 +159,8 @@
                     android:imeOptions="actionNext"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
+                    android:textColorHint="@color/primary_text"
+                    android:textColor="@color/icons"
                     android:minLines="1"/>
             </LinearLayout>
             <LinearLayout
@@ -157,7 +171,8 @@
                 <ImageView
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:src="@drawable/ic_address"/>
                 <EditText
                     android:id="@+id/edt_addresss"
@@ -169,7 +184,9 @@
                     android:imeOptions="actionDone"
                     android:inputType="textCapWords"
                     android:maxLines="1"
-                    android:minLines="1"/>
+                    android:minLines="1"
+                    android:textColorHint="@color/primary_text"
+                    android:textColor="@color/icons"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
