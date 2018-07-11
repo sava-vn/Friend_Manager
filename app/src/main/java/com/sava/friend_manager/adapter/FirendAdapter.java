@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.sava.friend_manager.AddActivity;
 import com.sava.friend_manager.DetailActivity;
 import com.sava.friend_manager.R;
@@ -27,6 +28,8 @@ import java.sql.Types;
 import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+
+import static java.security.AccessController.getContext;
 
 public class FirendAdapter extends RecyclerView.Adapter<FirendAdapter.ViewHolder> {
     private Context mContext;
@@ -48,7 +51,7 @@ public class FirendAdapter extends RecyclerView.Adapter<FirendAdapter.ViewHolder
         final Friend friend = mList.get(position);
         try{
             Uri uri = Uri.parse(friend.getAvata());
-            holder.imgAvata.setImageURI(uri);
+            Glide.with(mContext).load(uri).into(holder.imgAvata);
         }catch (Exception e){
             holder.imgAvata.setImageDrawable(ContextCompat.getDrawable(mContext,R.drawable.ms));
         }

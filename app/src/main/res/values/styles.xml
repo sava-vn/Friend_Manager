@@ -8,5 +8,8 @@
         <item name="colorAccent">@color/accent</item>
         <item name="colorControlNormal">@color/icons</item>
     </style>
-
+    <style name="SearchView">
+        <item name="floatingSearch_viewSearchInputTextColor">@color/primary_text</item>
+        <item name="floatingSearch_clearBtnColor">@color/primary_dark</item>
+    </style>
 </resources>

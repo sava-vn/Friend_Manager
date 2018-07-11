@@ -97,6 +97,17 @@ public class MyDB extends SQLiteOpenHelper {
         }
         return list;
     }
+    public ArrayList<Suggestion> getAllName(){
+        ArrayList<Suggestion> list = new ArrayList<>();
+        String sql = "SELECT  " + NAME +"," +ID + " FROM " + TABLE_NAME;
+        Cursor cursor = getReadableDatabase().rawQuery(sql,null);
+        if(cursor.moveToFirst()){
+            do{
+                list.add(new Suggestion(cursor.getString(0),cursor.getInt(1)));
+            }while (cursor.moveToNext());
+        }
+        return list;
+    }
     public Friend getFriendById(int id){
         Friend friend = null;
         String sql =   sql = "SELECT * FROM " + TABLE_NAME + " WHERE " + ID + " = " + id;

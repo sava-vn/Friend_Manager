@@ -138,19 +138,14 @@ public class DetailActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("sms:" + friend.getPhone()));
-                intent.putExtra("sms_body", "HALO");
                 startActivity(intent);
             }
         });
         btnEmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String mailto = friend.getEmail() +
-                        "?cc=" + "" +
-                        "&subject=" + Uri.encode("") +
-                        "&body=" + Uri.encode("");
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
-                emailIntent.setData(Uri.parse(mailto));
+                emailIntent.setData(Uri.parse("mailto:"+friend.getEmail()));
                 try {
                     startActivity(emailIntent);
                 } catch (ActivityNotFoundException e) {
