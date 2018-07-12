@@ -50,25 +50,28 @@
                 android:layout_gravity="bottom"
                 android:textStyle="bold"
                 android:textColor="@color/icons"
-                android:layout_margin="4dp"
-                android:elevation="4dp"
+                android:layout_margin="8dp"
+                android:elevation="12dp"
                 android:background="@drawable/custom_toolbar"
                 android:padding="8dp"/>
         </android.support.design.widget.CoordinatorLayout>
         <LinearLayout
-            android:background="@drawable/gradien"
+            android:background="@color/primary_dark"
             android:layout_weight="6"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:orientation="vertical"
-            android:paddingTop="35dp"
+            android:paddingTop="20dp"
             android:gravity="center_horizontal"
-            android:paddingRight="16dp">
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp">
             <LinearLayout
                 android:weightSum="5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="8dp"
+                android:background="@drawable/custom_editext"
+                android:elevation="8dp">
                 <ImageView
                     android:layout_weight="1"
                     android:layout_width="0dp"
@@ -76,24 +79,27 @@
                     android:layout_gravity="center"
                     android:src="@drawable/account_circle"/>
                 <EditText
+                    android:layout_gravity="center_vertical"
                     android:id="@+id/edt_name"
                     android:layout_weight="4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/custom_editext"
                     android:hint="name"
-                    android:textColorHint="@color/primary_text"
+                    android:textColorHint="@color/secondary_text"
                     android:textColor="@color/icons"
                     android:imeOptions="actionNext"
                     android:inputType="textCapWords"
                     android:maxLines="1"
-                    android:minLines="1"/>
+                    android:minLines="1"
+                    android:background="@color/transparent"/>
             </LinearLayout>
             <LinearLayout
                 android:weightSum="5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_editext"
+                android:elevation="8dp">
                 <ImageView
                     android:layout_weight="1"
                     android:layout_width="0dp"
@@ -101,15 +107,16 @@
                     android:layout_gravity="center"
                     android:src="@drawable/calendar_range"/>
                 <EditText
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/transparent"
                     android:id="@+id/edt_bd"
                     android:layout_weight="4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/custom_editext"
                     android:hint="birthday"
                     android:focusable="false"
                     android:clickable="true"
-                    android:textColorHint="@color/primary_text"
+                    android:textColorHint="@color/secondary_text"
                     android:textColor="@color/icons"
                     android:imeOptions="actionNext"/>
             </LinearLayout>
@@ -117,7 +124,9 @@
                 android:weightSum="5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_editext"
+                android:elevation="8dp">
                 <ImageView
                     android:layout_weight="1"
                     android:layout_width="0dp"
@@ -129,12 +138,13 @@
                     android:layout_weight="4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/custom_editext"
+                    android:background="@color/transparent"
+                    android:layout_gravity="center_vertical"
                     android:hint="phone"
                     android:imeOptions="actionNext"
                     android:inputType="phone"
                     android:maxLines="1"
-                    android:textColorHint="@color/primary_text"
+                    android:textColorHint="@color/secondary_text"
                     android:textColor="@color/icons"
                     android:minLines="1"/>
             </LinearLayout>
@@ -142,7 +152,9 @@
                 android:weightSum="5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_editext"
+                android:elevation="8dp">
                 <ImageView
                     android:layout_gravity="center"
                     android:layout_weight="1"
@@ -154,12 +166,13 @@
                     android:layout_weight="4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/custom_editext"
+                    android:background="@color/transparent"
+                    android:layout_gravity="center_vertical"
                     android:hint="email"
                     android:imeOptions="actionNext"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
-                    android:textColorHint="@color/primary_text"
+                    android:textColorHint="@color/secondary_text"
                     android:textColor="@color/icons"
                     android:minLines="1"/>
             </LinearLayout>
@@ -167,7 +180,9 @@
                 android:weightSum="5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_editext"
+                android:elevation="8dp">
                 <ImageView
                     android:layout_weight="1"
                     android:layout_width="0dp"
@@ -179,13 +194,14 @@
                     android:layout_weight="4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/custom_editext"
+                    android:background="@color/transparent"
+                    android:layout_gravity="center_vertical"
                     android:hint="address"
                     android:imeOptions="actionDone"
                     android:inputType="textCapWords"
                     android:maxLines="1"
                     android:minLines="1"
-                    android:textColorHint="@color/primary_text"
+                    android:textColorHint="@color/secondary_text"
                     android:textColor="@color/icons"/>
             </LinearLayout>
         </LinearLayout>

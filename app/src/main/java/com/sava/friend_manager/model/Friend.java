@@ -1,6 +1,6 @@
 package com.sava.friend_manager.model;
 
-public class Friend {
+public class Friend{
     private int id;
     private String avata;
     private String name;

@@ -14,6 +14,8 @@ import com.sava.friend_manager.adapter.FirendAdapter;
 import com.sava.friend_manager.model.Friend;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class FavoriteFragment extends Fragment {
     private RecyclerView mRecyclerView;
@@ -38,6 +40,12 @@ public class FavoriteFragment extends Fragment {
         mRecyclerView.setHasFixedSize(true);
         list = new ArrayList<>();
         list.addAll(MainActivity.myDB.getAllFriendByType(0));
+        Collections.sort(list, new Comparator<Friend>() {
+            @Override
+            public int compare(Friend friend, Friend t1) {
+                return friend.getName().compareToIgnoreCase(t1.getName());
+            }
+        });
         adapter = new FirendAdapter(getActivity(),list);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity(),LinearLayoutManager.VERTICAL,false);
         mRecyclerView.setLayoutManager(layoutManager);
@@ -48,6 +56,12 @@ public class FavoriteFragment extends Fragment {
     public void onResume() {
         list.clear();
         list.addAll(MainActivity.myDB.getAllFriendByType(0));
+        Collections.sort(list, new Comparator<Friend>() {
+            @Override
+            public int compare(Friend friend, Friend t1) {
+                return friend.getName().compareToIgnoreCase(t1.getName());
+            }
+        });
         adapter.notifyDataSetChanged();
         super.onResume();
     }
