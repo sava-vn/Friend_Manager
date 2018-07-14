@@ -74,17 +74,17 @@
                 android:textStyle="bold"
                 android:textColor="@color/icons"
                 android:layout_margin="8dp"
-                android:elevation="12dp"
+                android:elevation="4dp"
                 android:background="@drawable/custom_toolbar"
                 android:padding="8dp"/>
         </android.support.design.widget.CoordinatorLayout>
         <LinearLayout
+            android:background="@color/primary_dark"
             android:layout_weight="6"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginRight="16dp"
-            android:orientation="vertical"
-            android:layout_marginTop="20dp">
+            android:padding="20dp"
+            android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="18sp"
-                        android:textColor="@color/primary_dark"
+                        android:textColor="@color/icons"
                         android:text="01684332537"
                         />
                 </LinearLayout>
@@ -159,7 +159,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="18sp"
                         android:text="levansang.gthn@gmail.com"
-                        android:textColor="@color/primary_dark"
+                        android:textColor="@color/icons"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -201,7 +201,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="18sp"
                         android:text="20-09-1992"
-                        android:textColor="@color/primary_dark"
+                        android:textColor="@color/icons"
                         />
                 </LinearLayout>
             </LinearLayout>
@@ -230,7 +230,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="18sp"
                         android:text="Nam Trực - Nam Định"
-                        android:textColor="@color/primary_dark"
+                        android:textColor="@color/icons"
                         />
                 </LinearLayout>
             </LinearLayout>

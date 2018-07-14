@@ -84,9 +84,9 @@ public class MainActivity extends AppCompatActivity implements AppBarLayout.OnOf
         mViewPager.setAdapter(adapter);
         mViewPager.setCurrentItem(1);
         mTabLayout.setupWithViewPager(mViewPager);
-        mTabLayout.getTabAt(0).setIcon(R.drawable.ic_favorite);
-        mTabLayout.getTabAt(1).setIcon(R.drawable.ic_normal);
-        mTabLayout.getTabAt(2).setIcon(R.drawable.ic_black);
+//        mTabLayout.getTabAt(0).setIcon(R.drawable.ic_favorite);
+//        mTabLayout.getTabAt(1).setIcon(R.drawable.ic_normal);
+//        mTabLayout.getTabAt(2).setIcon(R.drawable.ic_black);
     }
 
     public void initAction() {

@@ -59,13 +59,16 @@ public class AddActivity extends AppCompatActivity {
 
     public void setFontandStyle(){
         tvImgSelect.setTypeface(SFont.setFont(this,SFont.FONT1),Typeface.BOLD);
+        edtName.setTypeface(SFont.setFont(this,SFont.FONT1),Typeface.BOLD);
+        edtPhone.setTypeface(SFont.setFont(this,SFont.FONT1),Typeface.BOLD);
+        edtEmail.setTypeface(SFont.setFont(this,SFont.FONT1),Typeface.BOLD);
+        edtAddress.setTypeface(SFont.setFont(this,SFont.FONT1),Typeface.BOLD);
         setSupportActionBar(mToolbar);
         String abc;
         if(isAdd)
             abc="ADD NEW FRIEND";
         else
             abc = "EDIT FIREND";
-
         TextView tv2 = SFont.setFontForActionBar(this,SFont.FONT1,Color.WHITE,abc);
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(tv2);
